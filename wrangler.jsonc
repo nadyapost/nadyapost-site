@@ -3,5 +3,7 @@
   // Pure static site — no Workers, no KV, no bindings needed.
   "name": "nadyapost-site",
   "compatibility_date": "2025-01-01",
-  "pages_build_output_dir": "dist"
+  "assets": {
+    "directory": "./dist"
+  }
 }
