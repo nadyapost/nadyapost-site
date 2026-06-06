@@ -1,0 +1,24 @@
+# Nadya Post
+
+> Personal site of Nadya Post — medical doctor (MD), software engineering manager, and health tech co-founder.
+
+Nadya Post is co-founding Merid Health, Australia's first bulk-billed telehealth platform for women's health, starting with menopause care. She brings an unusual combination of clinical medicine, surgical research, and a decade of software engineering leadership.
+
+## Who She Is
+
+- **Doctor**: MD from Moscow State University of Medicine and Dentistry. Research Fellow at Oslo University Hospital, Interventional Center, Department of Hepatic Surgery.
+- **Engineer & Leader**: Engineering Manager at Xero (2021–2026), leading Payroll on Mobile across Australia, New Zealand, the United Kingdom, and the United States.
+- **Founder**: Co-founder of Merid Health — addressing the gap in women's healthcare access in Australia, focused on menopause care.
+
+## Published Research
+
+- [Margin status after laparoscopic resection of colorectal liver metastases](https://pubmed.ncbi.nlm.nih.gov/24308605/) — HPB (Oxford), 2014. First author.
+- [Inflammatory Response After Laparoscopic Versus Open Resection — Oslo-CoMet Trial](https://pubmed.ncbi.nlm.nih.gov/26496309/) — Medicine (Baltimore), 2015.
+- [Russian classification of complications in surgery](https://pubmed.ncbi.nlm.nih.gov/25055544/) — Vestnik Khirurgii, 2014.
+
+## Contact & Profiles
+
+- Email: hello@nadyapost.com
+- LinkedIn: https://www.linkedin.com/in/nadya-post-33ab6b63/
+- Instagram: https://www.instagram.com/nadyapost/
+- Merid Health: https://meridhealth.com.au/

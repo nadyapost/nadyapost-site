@@ -5,10 +5,159 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- ── Primary meta ── -->
     <title>Nadya Post — Doctor. Engineer. Founder.</title>
-    <meta name="description" content="Doctor, engineer, and health tech founder. Co-building Merid Health — Australia's first bulk-billed telehealth platform for women's health." />
+    <meta name="description" content="Nadya Post: medical doctor (MD), engineering manager, and health tech co-founder. Building Merid Health — Australia's first bulk-billed telehealth platform for women's health." />
+    <meta name="author" content="Nadya Post" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://nadyapost.com" />
+
+    <!-- ── Open Graph (Gmail link previews, LinkedIn, Slack) ── -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Nadya Post" />
+    <meta property="og:title" content="Nadya Post — Doctor. Engineer. Founder." />
+    <meta property="og:description" content="Medical doctor, engineering manager, and health tech co-founder building Merid Health — Australia's first bulk-billed telehealth platform for women's health." />
+    <meta property="og:url" content="https://nadyapost.com" />
+    <meta property="og:image" content="https://nadyapost.com/nadya.png" />
+    <meta property="og:image:alt" content="Nadya Post" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="profile:first_name" content="Nadya" />
+    <meta property="profile:last_name" content="Post" />
+
+    <!-- ── Twitter / X card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nadya Post — Doctor. Engineer. Founder." />
+    <meta name="twitter:description" content="Medical doctor, engineering manager, and health tech co-founder building Merid Health — Australia's first bulk-billed telehealth platform for women's health." />
+    <meta name="twitter:image" content="https://nadyapost.com/nadya.png" />
+    <meta name="twitter:image:alt" content="Nadya Post" />
+
+    <!-- ── Schema.org JSON-LD ── -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://nadyapost.com/#website",
+          "url": "https://nadyapost.com",
+          "name": "Nadya Post",
+          "description": "Personal site of Nadya Post — medical doctor, software engineering manager, and health tech co-founder."
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://nadyapost.com/#profilepage",
+          "url": "https://nadyapost.com",
+          "name": "Nadya Post — Doctor. Engineer. Founder.",
+          "description": "Nadya Post: medical doctor, engineering manager, and health tech co-founder building Merid Health — Australia's first bulk-billed telehealth platform for women's health.",
+          "isPartOf": { "@id": "https://nadyapost.com/#website" },
+          "mainEntity": { "@id": "https://nadyapost.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://nadyapost.com/#person",
+          "name": "Nadya Post",
+          "givenName": "Nadya",
+          "familyName": "Post",
+          "url": "https://nadyapost.com",
+          "email": "hello@nadyapost.com",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nadyapost.com/nadya.png",
+            "caption": "Nadya Post"
+          },
+          "description": "Medical doctor, software engineering manager, and co-founder of Merid Health — Australia's first bulk-billed telehealth platform for women's health.",
+          "jobTitle": "Co-founder & Engineering Manager",
+          "worksFor": [
+            {
+              "@type": "Organization",
+              "name": "Merid Health",
+              "url": "https://meridhealth.com.au/",
+              "description": "Australia's first bulk-billed telehealth platform for women's health"
+            },
+            {
+              "@type": "Organization",
+              "name": "Xero",
+              "url": "https://www.xero.com/",
+              "description": "Engineering Manager, Payroll on Mobile (2021–2026)"
+            }
+          ],
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Moscow State University of Medicine and Dentistry",
+              "description": "MD — Doctor of Medicine"
+            },
+            {
+              "@type": "Organization",
+              "name": "Oslo University Hospital",
+              "url": "https://oslo-universitetssykehus.no/",
+              "description": "Research Fellow, Interventional Center, Department of Hepatic Surgery"
+            }
+          ],
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "MD",
+            "name": "Doctor of Medicine",
+            "recognizedBy": {
+              "@type": "CollegeOrUniversity",
+              "name": "Moscow State University of Medicine and Dentistry"
+            }
+          },
+          "knowsAbout": [
+            "Women's Health",
+            "Telehealth",
+            "Menopause Care",
+            "Software Engineering",
+            "Engineering Management",
+            "Medical Research",
+            "Hepatic Surgery",
+            "Health Technology",
+            "Mobile Engineering",
+            "Team Leadership"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/nadya-post-33ab6b63/",
+            "https://www.instagram.com/nadyapost/",
+            "https://pubmed.ncbi.nlm.nih.gov/24308605/",
+            "https://pubmed.ncbi.nlm.nih.gov/26496309/",
+            "https://pubmed.ncbi.nlm.nih.gov/25055544/"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://pubmed.ncbi.nlm.nih.gov/24308605/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24308605/",
+          "name": "Margin status after laparoscopic resection of colorectal liver metastases",
+          "datePublished": "2014",
+          "author": { "@id": "https://nadyapost.com/#person" },
+          "isPartOf": { "@type": "Periodical", "name": "HPB (Oxford)" }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://pubmed.ncbi.nlm.nih.gov/26496309/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26496309/",
+          "name": "Inflammatory Response After Laparoscopic Versus Open Resection of Colorectal Liver Metastases: Data from the Oslo-CoMet Trial",
+          "datePublished": "2015",
+          "author": { "@id": "https://nadyapost.com/#person" },
+          "isPartOf": { "@type": "Periodical", "name": "Medicine (Baltimore)" }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://pubmed.ncbi.nlm.nih.gov/25055544/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25055544/",
+          "name": "Russian classification of complications in surgery",
+          "datePublished": "2014",
+          "author": { "@id": "https://nadyapost.com/#person" },
+          "isPartOf": { "@type": "Periodical", "name": "Vestnik Khirurgii" }
+        }
+      ]
+    })} />
+
+    <!-- ── Fonts ── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
