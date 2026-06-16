@@ -16,7 +16,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <link rel="canonical" href="https://nadyapost.com" />
 
-    <!-- ── Open Graph (Gmail link previews, LinkedIn, Slack) ── -->
+    <!-- ── Open Graph ── -->
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Nadya Post" />
     <meta property="og:title" content="Nadya Post, Doctor. Engineer. Founder." />
@@ -47,15 +47,6 @@
           "description": "Personal site of Nadya Post, medical doctor, software engineering manager, and health tech co-founder."
         },
         {
-          "@type": "ProfilePage",
-          "@id": "https://nadyapost.com/#profilepage",
-          "url": "https://nadyapost.com",
-          "name": "Nadya Post, Doctor. Engineer. Founder.",
-          "description": "Nadya Post: medical doctor, engineering manager, and health tech co-founder building Merid Health, Australia's first bulk-billed telehealth platform for women's health.",
-          "isPartOf": { "@id": "https://nadyapost.com/#website" },
-          "mainEntity": { "@id": "https://nadyapost.com/#person" }
-        },
-        {
           "@type": "Person",
           "@id": "https://nadyapost.com/#person",
           "name": "Nadya Post",
@@ -63,62 +54,18 @@
           "familyName": "Post",
           "url": "https://nadyapost.com",
           "email": "hello@nadyapost.com",
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://nadyapost.com/nadya.png",
-            "caption": "Nadya Post"
-          },
+          "image": { "@type": "ImageObject", "url": "https://nadyapost.com/nadya.png", "caption": "Nadya Post" },
           "description": "Medical doctor, software engineering manager, and co-founder of Merid Health, Australia's first bulk-billed telehealth platform for women's health.",
           "jobTitle": "Co-founder & Engineering Manager",
           "worksFor": [
-            {
-              "@type": "Organization",
-              "name": "Merid Health",
-              "url": "https://meridhealth.com/",
-              "description": "Australia's first bulk-billed telehealth platform for women's health"
-            },
-            {
-              "@type": "Organization",
-              "name": "Xero",
-              "url": "https://www.xero.com/",
-              "description": "Engineering Manager, Payroll on Mobile (2021–2026)"
-            }
+            { "@type": "Organization", "name": "Merid Health", "url": "https://meridhealth.com/" },
+            { "@type": "Organization", "name": "Xero", "url": "https://www.xero.com/", "description": "Engineering Manager, 2021–2026" }
           ],
           "alumniOf": [
-            {
-              "@type": "CollegeOrUniversity",
-              "name": "Moscow State University of Medicine and Dentistry",
-              "description": "MD, Doctor of Medicine"
-            },
-            {
-              "@type": "Organization",
-              "name": "Oslo University Hospital",
-              "url": "https://oslo-universitetssykehus.no/",
-              "description": "Research Fellow, Interventional Center, Department of Hepatic Surgery"
-            }
+            { "@type": "CollegeOrUniversity", "name": "Moscow State University of Medicine and Dentistry", "description": "MD, 2007–2013" },
+            { "@type": "Organization", "name": "Oslo University Hospital", "url": "https://oslo-universitetssykehus.no/", "description": "Research Fellow, 2013–2017" }
           ],
-          "hasCredential": {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "degree",
-            "educationalLevel": "MD",
-            "name": "Doctor of Medicine",
-            "recognizedBy": {
-              "@type": "CollegeOrUniversity",
-              "name": "Moscow State University of Medicine and Dentistry"
-            }
-          },
-          "knowsAbout": [
-            "Women's Health",
-            "Telehealth",
-            "Menopause Care",
-            "Software Engineering",
-            "Engineering Management",
-            "Medical Research",
-            "Hepatic Surgery",
-            "Health Technology",
-            "Mobile Engineering",
-            "Team Leadership"
-          ],
+          "knowsAbout": ["Women's Health","Telehealth","Menopause Care","Software Engineering","Engineering Management","Medical Research","Hepatic Surgery","Health Technology"],
           "sameAs": [
             "https://www.linkedin.com/in/nadya-post-33ab6b63/",
             "https://www.instagram.com/nadyapost/",
@@ -127,33 +74,9 @@
             "https://pubmed.ncbi.nlm.nih.gov/25055544/"
           ]
         },
-        {
-          "@type": "ScholarlyArticle",
-          "@id": "https://pubmed.ncbi.nlm.nih.gov/24308605/",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/24308605/",
-          "name": "Margin status after laparoscopic resection of colorectal liver metastases",
-          "datePublished": "2014",
-          "author": { "@id": "https://nadyapost.com/#person" },
-          "isPartOf": { "@type": "Periodical", "name": "HPB (Oxford)" }
-        },
-        {
-          "@type": "ScholarlyArticle",
-          "@id": "https://pubmed.ncbi.nlm.nih.gov/26496309/",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/26496309/",
-          "name": "Inflammatory Response After Laparoscopic Versus Open Resection of Colorectal Liver Metastases: Data from the Oslo-CoMet Trial",
-          "datePublished": "2015",
-          "author": { "@id": "https://nadyapost.com/#person" },
-          "isPartOf": { "@type": "Periodical", "name": "Medicine (Baltimore)" }
-        },
-        {
-          "@type": "ScholarlyArticle",
-          "@id": "https://pubmed.ncbi.nlm.nih.gov/25055544/",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/25055544/",
-          "name": "Russian classification of complications in surgery",
-          "datePublished": "2014",
-          "author": { "@id": "https://nadyapost.com/#person" },
-          "isPartOf": { "@type": "Periodical", "name": "Vestnik Khirurgii" }
-        }
+        { "@type": "ScholarlyArticle", "@id": "https://pubmed.ncbi.nlm.nih.gov/24308605/", "url": "https://pubmed.ncbi.nlm.nih.gov/24308605/", "name": "Margin status after laparoscopic resection of colorectal liver metastases", "datePublished": "2014", "author": { "@id": "https://nadyapost.com/#person" }, "isPartOf": { "@type": "Periodical", "name": "HPB (Oxford)" } },
+        { "@type": "ScholarlyArticle", "@id": "https://pubmed.ncbi.nlm.nih.gov/26496309/", "url": "https://pubmed.ncbi.nlm.nih.gov/26496309/", "name": "Inflammatory Response After Laparoscopic Versus Open Resection of Colorectal Liver Metastases: Data from the Oslo-CoMet Trial", "datePublished": "2015", "author": { "@id": "https://nadyapost.com/#person" }, "isPartOf": { "@type": "Periodical", "name": "Medicine (Baltimore)" } },
+        { "@type": "ScholarlyArticle", "@id": "https://pubmed.ncbi.nlm.nih.gov/25055544/", "url": "https://pubmed.ncbi.nlm.nih.gov/25055544/", "name": "Russian classification of complications in surgery", "datePublished": "2014", "author": { "@id": "https://nadyapost.com/#person" }, "isPartOf": { "@type": "Periodical", "name": "Vestnik Khirurgii" } }
       ]
     })} />
 
@@ -166,18 +89,27 @@
   <body>
     <main>
 
-      <!-- ── HERO: big name ── -->
+      <!-- ── HERO ── -->
       <section class="hero">
-        <h1>Nadya Post</h1>
+        <p class="greeting">Hello! I'm Nadya.</p>
+        <h1>
+          Doctor, engineer,<br />
+          and co-founder<span class="dimmed"><br />
+          building healthcare<br />
+          women deserve.</span>
+        </h1>
+        <a href="mailto:hello@nadyapost.com" class="cta-btn">Get in touch →</a>
       </section>
 
-      <!-- ── INTRO: centered photo + caption ── -->
+      <!-- ── INTRO: photo + caption ── -->
       <section class="intro">
         <img src="/nadya.png" alt="Nadya Post" class="intro-photo" />
-        <p class="intro-caption">
-          Medical doctor. Engineer. Co-founder of <a href="https://meridhealth.com/" target="_blank" rel="noopener">Merid Health</a>.<br />
-          <a href="https://www.instagram.com/nadyapost/" target="_blank" rel="noopener">@nadyapost</a>
-        </p>
+        <div class="intro-lines">
+          <span>Medical doctor.</span>
+          <span>Engineer.</span>
+          <span>Co-founder of <a href="https://meridhealth.com/" target="_blank" rel="noopener">Merid Health</a>.</span>
+          <span><a href="https://www.instagram.com/nadyapost/" target="_blank" rel="noopener">@nadyapost</a></span>
+        </div>
       </section>
 
       <hr />
@@ -203,13 +135,13 @@
           <div class="cred-stack">
             <div class="cred-block">
               <p class="cred-title">Medical Training</p>
-              <p>MD, Moscow State University of Medicine and Dentistry, 2013</p>
+              <p>MD, Moscow State University of Medicine and Dentistry, Russia, 2007–2013</p>
               <p>Research Fellow, Oslo University Hospital,<br />Interventional Center, Department of Hepatic Surgery, 2013–2017</p>
             </div>
             <div class="cred-block cred-block--second">
               <p class="cred-title">Engineering &amp; Leadership</p>
-              <p>Engineering Manager, Xero (2021–2026)</p>
-              <p>Software Engineer 2017–2022</p>
+              <p>Engineering Manager, Xero, 2021–2026</p>
+              <p>Software Engineer, 2017–2022</p>
             </div>
           </div>
           <div class="publications">
@@ -338,30 +270,58 @@
     padding-bottom: 4rem;
   }
 
-  /* ── Hero: giant name ── */
+  /* ── Hero ── */
   .hero {
-    padding: 2.5rem 1rem 0;
-    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 5rem;
+  }
+
+  .greeting {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+    max-width: none;
   }
 
   h1 {
     font-family: var(--sans);
-    font-weight: 300;
-    font-size: clamp(3rem, 13vw, 14rem);
-    letter-spacing: -0.01em;
-    line-height: 1;
-    white-space: nowrap;
-    text-align: center;
+    font-weight: 800;
+    font-size: clamp(2.6rem, 7vw, 7.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.0;
     color: var(--ink);
+    max-width: none;
   }
 
-  /* ── Intro: centered photo + caption ── */
+  .dimmed {
+    color: #c8c8c8;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.85rem 1.75rem;
+    border-radius: 100px;
+    margin-top: 2.75rem;
+    transition: opacity 0.15s;
+    letter-spacing: 0;
+  }
+  .cta-btn:hover { opacity: 0.75; }
+
+  /* ── Intro: photo + caption ── */
   .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3.5rem 1.5rem 4rem;
+    padding: 4rem 1.5rem 4.5rem;
     gap: 1.25rem;
   }
 
@@ -374,16 +334,17 @@
     filter: grayscale(6%) contrast(1.03);
   }
 
-  .intro-caption {
+  .intro-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
     font-size: 0.8rem;
     color: var(--ink-muted);
     line-height: 1.75;
-    max-width: 38ch;
-    font-weight: 400;
   }
 
-  .intro-caption a { color: var(--ink-muted); }
-  .intro-caption a:hover { color: var(--ink); }
+  .intro-lines a { color: var(--ink-muted); text-decoration-color: transparent; }
+  .intro-lines a:hover { color: var(--ink); }
 
   /* ── Labels ── */
   .label {
@@ -397,18 +358,11 @@
   }
 
   /* ── Credentials ── */
-  .cred-stack {
-    display: flex;
-    flex-direction: column;
-  }
+  .cred-stack { display: flex; flex-direction: column; }
 
-  .cred-block {
-    padding: 1.5rem 0;
-  }
+  .cred-block { padding: 1.5rem 0; }
 
-  .cred-block--second {
-    border-top: 1px solid var(--line);
-  }
+  .cred-block--second { border-top: 1px solid var(--line); }
 
   .cred-title {
     font-weight: 500;
@@ -467,7 +421,7 @@
   /* ── Email ── */
   .email {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-decoration: none;
     border-bottom: 1px solid var(--ink);
@@ -489,9 +443,7 @@
 
   /* ── Responsive ── */
   @media (max-width: 600px) {
-    h1 { font-size: clamp(2.8rem, 13vw, 5rem); }
-    .hero { padding: 1.75rem 0.75rem 0; }
-    .intro { padding: 2.5rem 1.5rem 3rem; }
-    .intro-photo { width: 90px; height: 115px; }
+    .hero { padding: 3rem 1.5rem 3.5rem; }
+    .intro { padding: 3rem 1.5rem 3.5rem; }
   }
 </style>
