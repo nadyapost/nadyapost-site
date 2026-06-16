@@ -4,8 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
@@ -203,13 +203,13 @@
           <div class="cred-stack">
             <div class="cred-block">
               <p class="cred-title">Medical Training</p>
-              <p>MD, Moscow State University of Medicine and Dentistry</p>
-              <p>Research Fellow, Oslo University Hospital,<br />Interventional Center, Department of Hepatic Surgery</p>
+              <p>MD, Moscow State University of Medicine and Dentistry, 2013</p>
+              <p>Research Fellow, Oslo University Hospital,<br />Interventional Center, Department of Hepatic Surgery, 2013–2017</p>
             </div>
             <div class="cred-block cred-block--second">
               <p class="cred-title">Engineering &amp; Leadership</p>
               <p>Engineering Manager, Xero (2021–2026)</p>
-              <p>Payroll on Mobile, scaled across four countries and three platforms</p>
+              <p>Software Engineer 2017–2022</p>
             </div>
           </div>
           <div class="publications">
@@ -296,19 +296,19 @@
     --sans:      'Inter', system-ui, -apple-system, sans-serif;
   }
 
-  html { font-size: 17px; scroll-behavior: smooth; }
+  html { font-size: 16px; scroll-behavior: smooth; }
 
   body {
     background: var(--bg);
     color: var(--ink);
     font-family: var(--sans);
-    font-weight: 300;
-    line-height: 1.85;
+    font-weight: 400;
+    line-height: 1.8;
     -webkit-font-smoothing: antialiased;
   }
 
-  p { max-width: 58ch; }
-  p + p { margin-top: 1.1rem; }
+  p { max-width: 56ch; }
+  p + p { margin-top: 1rem; }
 
   a {
     color: var(--ink);
@@ -340,16 +340,16 @@
 
   /* ── Hero: giant name ── */
   .hero {
-    padding: 2rem 0.75rem 0;
+    padding: 2.5rem 1rem 0;
     overflow: hidden;
   }
 
   h1 {
     font-family: var(--sans);
     font-weight: 800;
-    font-size: clamp(3.5rem, 14.5vw, 16rem);
-    letter-spacing: -0.03em;
-    line-height: 0.9;
+    font-size: clamp(3rem, 13vw, 14rem);
+    letter-spacing: -0.035em;
+    line-height: 1;
     white-space: nowrap;
     color: var(--ink);
   }
@@ -360,24 +360,25 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem 1.5rem 6rem;
-    gap: 1.5rem;
+    padding: 3.5rem 1.5rem 4rem;
+    gap: 1.25rem;
   }
 
   .intro-photo {
-    width: 128px;
-    height: 128px;
+    width: 110px;
+    height: 140px;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center 15%;
     border-radius: 2px;
-    filter: grayscale(5%) contrast(1.02);
+    filter: grayscale(6%) contrast(1.03);
   }
 
   .intro-caption {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: var(--ink-muted);
     line-height: 1.75;
-    max-width: 42ch;
+    max-width: 38ch;
+    font-weight: 400;
   }
 
   .intro-caption a { color: var(--ink-muted); }
@@ -486,9 +487,10 @@
   }
 
   /* ── Responsive ── */
-  @media (max-width: 540px) {
-    .hero { padding: 1.5rem 0.5rem 0; }
-    .intro { padding: 4rem 1.5rem 5rem; }
-    .intro-photo { width: 104px; height: 104px; }
+  @media (max-width: 600px) {
+    h1 { font-size: clamp(2.8rem, 13vw, 5rem); }
+    .hero { padding: 1.75rem 0.75rem 0; }
+    .intro { padding: 2.5rem 1.5rem 3rem; }
+    .intro-photo { width: 90px; height: 115px; }
   }
 </style>
