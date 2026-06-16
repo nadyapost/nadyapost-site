@@ -74,7 +74,7 @@
             {
               "@type": "Organization",
               "name": "Merid Health",
-              "url": "https://meridhealth.com.au/",
+              "url": "https://meridhealth.com/",
               "description": "Australia's first bulk-billed telehealth platform for women's health"
             },
             {
@@ -160,21 +160,24 @@
     <!-- ── Fonts ── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <main>
 
-      <!-- ── HERO ── -->
+      <!-- ── HERO: big name ── -->
       <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <h1>Nadya Post</h1>
-            <p class="tagline">Doctor. Engineer. Founder.</p>
-          </div>
-          <img src="/nadya.png" alt="Nadya Post" class="hero-photo" />
-        </div>
+        <h1>Nadya Post</h1>
+      </section>
+
+      <!-- ── INTRO: centered photo + caption ── -->
+      <section class="intro">
+        <img src="/nadya.png" alt="Nadya Post" class="intro-photo" />
+        <p class="intro-caption">
+          Medical doctor. Engineer. Co-founder of <a href="https://meridhealth.com/" target="_blank" rel="noopener">Merid Health</a>.<br />
+          Sydney, Australia &nbsp;·&nbsp; <a href="https://www.instagram.com/nadyapost/" target="_blank" rel="noopener">@nadyapost</a>
+        </p>
       </section>
 
       <hr />
@@ -242,7 +245,7 @@
         <div class="container">
           <p class="label">What I'm Building</p>
           <p>
-            I'm co-founding <a href="https://meridhealth.com.au/" target="_blank" rel="noopener"><strong>Merid Health</strong></a>, Australia's first bulk-billed telehealth platform for women's health, starting with menopause care.
+            I'm co-founding <a href="https://meridhealth.com/" target="_blank" rel="noopener"><strong>Merid Health</strong></a>, Australia's first bulk-billed telehealth platform for women's health, starting with menopause care.
           </p>
           <p>
             Seven million Australian women live with menopause symptoms. Most wait years for answers. Most pay hundreds out of pocket for care that should be accessible to everyone.
@@ -289,8 +292,7 @@
     --ink-muted: #888888;
     --line:      #e8e8e8;
     --bg:        #ffffff;
-    --max:       660px;
-    --serif:     'Cormorant Garamond', Georgia, serif;
+    --max:       620px;
     --sans:      'Inter', system-ui, -apple-system, sans-serif;
   }
 
@@ -336,44 +338,50 @@
     padding-bottom: 4rem;
   }
 
-  /* ── Hero ── */
-  .hero > .container { padding-top: 5rem; padding-bottom: 5rem; }
-
-  .hero-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.5rem;
+  /* ── Hero: giant name ── */
+  .hero {
+    padding: 2rem 0.75rem 0;
+    overflow: hidden;
   }
-
-  .hero-text { flex: 1; }
 
   h1 {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: 3.2rem;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-    margin-bottom: 0.6rem;
+    font-family: var(--sans);
+    font-weight: 800;
+    font-size: clamp(3.5rem, 14.5vw, 16rem);
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+    white-space: nowrap;
+    color: var(--ink);
   }
 
-  .tagline {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+  /* ── Intro: centered photo + caption ── */
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1.5rem 6rem;
+    gap: 1.5rem;
   }
 
-  .hero-photo {
-    width: 148px;
-    height: 148px;
-    border-radius: 50%;
+  .intro-photo {
+    width: 128px;
+    height: 128px;
     object-fit: cover;
-    object-position: center 15%;
-    flex-shrink: 0;
-    filter: grayscale(8%) contrast(1.02);
+    object-position: center 20%;
+    border-radius: 2px;
+    filter: grayscale(5%) contrast(1.02);
   }
+
+  .intro-caption {
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    max-width: 42ch;
+  }
+
+  .intro-caption a { color: var(--ink-muted); }
+  .intro-caption a:hover { color: var(--ink); }
 
   /* ── Labels ── */
   .label {
@@ -401,11 +409,10 @@
   }
 
   .cred-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.88rem;
     margin-bottom: 0.5rem;
     max-width: none;
-    letter-spacing: 0.01em;
   }
 
   .cred-block p:not(.cred-title) {
@@ -458,9 +465,8 @@
   /* ── Email ── */
   .email {
     display: inline-block;
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 300;
     text-decoration: none;
     border-bottom: 1px solid var(--ink);
     padding-bottom: 1px;
@@ -481,17 +487,8 @@
 
   /* ── Responsive ── */
   @media (max-width: 540px) {
-    h1 { font-size: 2.4rem; }
-
-    .hero-inner {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      gap: 1.75rem;
-    }
-
-    .hero-photo { width: 110px; height: 110px; }
-
-
-    .hero > .container { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    .hero { padding: 1.5rem 0.5rem 0; }
+    .intro { padding: 4rem 1.5rem 5rem; }
+    .intro-photo { width: 104px; height: 104px; }
   }
 </style>
